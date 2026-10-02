@@ -1,0 +1,507 @@
+ * {
+
+    margin: 0;
+
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #eef3f8;
+    color: #17202a;
+}
+
+
+/* CABEÇALHO */
+
+.cabecalho {
+    background: #ec008a;
+    color: white;
+    min-height: 85px;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo > span {
+    font-size: 38px;
+}
+
+.logo h1 {
+    font-size: 24px;
+}
+
+.logo p {
+    color: #b9d4e8;
+    font-size: 13px;
+    margin-top: 3px;
+}
+
+.sinal {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #ec008a;
+    border: 1px solid #ff6cc2;
+    padding: 9px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.bolinha {
+    width: 9px;
+    height: 9px;
+    background: #37d67a;
+    border-radius: 50%;
+}
+
+
+/* CONTEÚDO */
+
+main {
+    width: 88%;
+    max-width: 1000px;
+    margin: 35px auto;
+}
+
+
+/* INTRODUÇÃO */
+
+.introducao {
+    background: #ec008a;
+    color: white;
+    border-radius: 18px;
+    padding: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+
+.pequeno-titulo {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #bce1fa;
+}
+
+.introducao h2 {
+    font-size: 32px;
+    margin: 10px 0;
+}
+
+.introducao p {
+    color: #e1f1fc;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+.icone-localizacao {
+    font-size: 90px;
+    opacity: 0.9;
+    margin-right: 25px;
+}
+
+
+/* CARDS */
+
+.gps-card,
+.salva-card,
+.mapa-card,
+.desafio-card {
+    background: white;
+    border-radius: 18px;
+    padding: 28px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 20px rgba(20, 50, 70, 0.08);
+}
+
+.titulo-secao {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 22px;
+}
+
+.icone-titulo {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: #e7f3fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+}
+
+.titulo-secao h2 {
+    font-size: 21px;
+    color: #ec008a;
+}
+
+.titulo-secao p {
+    color: #7b8994;
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+
+/* STATUS */
+
+.status {
+    background: #f0f7fc;
+    border-left: 4px solid #ec008a;
+    padding: 14px;
+    border-radius: 7px;
+    color: #456171;
+    margin-bottom: 22px;
+    font-size: 14px;
+}
+
+
+/* COORDENADAS */
+
+.coordenadas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.coordenada {
+    background: #172b3b;
+    color: white;
+    border-radius: 13px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icone-coordenada {
+    width: 45px;
+    height: 45px;
+    background: #24465f;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+}
+
+.coordenada span {
+    display: block;
+    color: #91a9b9;
+    font-size: 11px;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.coordenada strong {
+    font-size: 19px;
+    letter-spacing: 0.5px;
+}
+
+
+/* BOTÃO */
+
+.botao-localizacao {
+    width: 100%;
+    border: none;
+    background: #ec008a;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.botao-localizacao:hover {
+    background: #ff58bf;
+    transform: translateY(-1px);
+}
+
+
+/* LOCALIZAÇÃO SALVA */
+
+.mensagem-salva {
+    background: #edf8f2;
+    border: 1px solid #c8e8d5;
+    border-radius: 12px;
+    padding: 18px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.icone-memoria {
+    font-size: 25px;
+}
+
+.mensagem-salva p {
+    color: #256044;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+/* MAPA */
+
+.mapa {
+    width: 100%;
+    height: 380px;
+    background: #dfeaf1;
+    border-radius: 14px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mapa iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.mapa-vazio {
+    text-align: center;
+    color: #71808a;
+}
+
+.mapa-vazio span {
+    font-size: 55px;
+}
+
+.mapa-vazio h3 {
+    color: #344955;
+    margin: 8px 0;
+}
+
+.mapa-vazio p {
+    font-size: 14px;
+}
+
+
+/* DESAFIO */
+
+.explicacao {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #fff8e8;
+    border: 1px solid #f2dfb0;
+    padding: 13px;
+    border-radius: 10px;
+    color: #725a20;
+    font-size: 14px;
+    margin-bottom: 22px;
+}
+
+.explicacao span {
+    font-size: 20px;
+}
+
+.area-arrastar {
+    height: 250px;
+    border: 2px dashed #b9cbd7;
+    background: #f8fbfd;
+    border-radius: 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.objeto-arrastar,
+.objeto-lixeira {
+    width: 130px;
+    min-height: 125px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: 0.2s;
+}
+
+.objeto-arrastar {
+    background: #e8f3fb;
+    border: 2px solid #a9d2ed;
+    cursor: grab;
+}
+
+.objeto-arrastar:hover {
+    transform: scale(1.05);
+}
+
+.objeto-lixeira {
+    background: #f7eeee;
+    border: 2px solid #e1c1c1;
+}
+
+.objeto-lixeira.destino {
+    background: #ffe1e1;
+    border: 3px dashed #d9534f;
+    transform: scale(1.08);
+}
+
+.emoji {
+    font-size: 42px;
+    margin-bottom: 6px;
+}
+
+.objeto-arrastar strong,
+.objeto-lixeira strong {
+    font-size: 14px;
+    color: #273b48;
+}
+
+.objeto-arrastar span,
+.objeto-lixeira span {
+    font-size: 11px;
+    color: #7c8c95;
+    margin-top: 3px;
+}
+
+.linha-arrastar {
+    width: 100px;
+    height: 2px;
+    background: #bdccd5;
+    position: relative;
+}
+
+.linha-arrastar::after {
+    content: "→";
+    position: absolute;
+    right: -5px;
+    top: -13px;
+    font-size: 23px;
+    color: #1769aa;
+}
+
+
+/* RODAPÉ */
+
+footer {
+    background: #ec008a;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+footer p {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+footer span {
+    color: #abc3d3;
+    font-size: 12px;
+}
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 700px) {
+
+    .cabecalho {
+        padding: 18px 5%;
+    }
+
+    .sinal {
+        display: none;
+    }
+
+    main {
+        width: 92%;
+        margin-top: 25px;
+    }
+
+    .introducao {
+        padding: 25px;
+    }
+
+    .introducao h2 {
+        font-size: 25px;
+    }
+
+    .icone-localizacao {
+        font-size: 55px;
+        margin-left: 10px;
+        margin-right: 0;
+    }
+
+    .coordenadas {
+        grid-template-columns: 1fr;
+    }
+
+    .gps-card,
+    .salva-card,
+    .mapa-card,
+    .desafio-card {
+        padding: 20px;
+    }
+
+    .mapa {
+        height: 300px;
+    }
+
+    .area-arrastar {
+        height: 300px;
+    }
+
+    .linha-arrastar {
+        width: 50px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .logo h1 {
+        font-size: 19px;
+    }
+
+    .logo > span {
+        font-size: 30px;
+    }
+
+    .introducao {
+        display: block;
+    }
+
+    .icone-localizacao {
+        display: none;
+    }
+
+    .area-arrastar {
+        flex-direction: column;
+        gap: 15px;
+        height: 400px;
+    }
+
+    .linha-arrastar {
+        transform: rotate(90deg);
+        width: 50px;
+    }
+
+    .objeto-arrastar,
+    .objeto-lixeira {
+        min-height: 105px;
+    }
+}
